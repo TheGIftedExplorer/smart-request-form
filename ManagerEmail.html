@@ -1,0 +1,26 @@
+<div style="font-family: Arial, sans-serif; max-width: 600px; border: 1px solid #eee; border-top: 4px solid #c0392b; padding: 20px; border-radius: 10px;">
+  <div style="text-align: center; padding-bottom: 20px;">
+    <img src="https://drive.google.com/uc?export=view&id=1Pq1Bhrh5QI4sZajAZ1RxA0QnojtLGHN3" alt="Company Logo" width="80">
+  </div>
+
+  <h2 style="color: #2c3e50; border-bottom: 2px solid #f4f4f4; padding-bottom: 10px; text-align: center;">New Approval Request</h2>
+  
+  <p style="font-size: 16px; text-align: center;"><strong><?= requesterName ?></strong> has submitted a new <strong><?= type ?></strong> request.</p>
+  
+  <div style="background-color: #f9f9f9; padding: 15px; border-left: 4px solid #c0392b; margin: 20px 0;">
+    <?!= dateHtml ?>
+    <p style="margin: 5px 0;"><strong>Priority:</strong> <span style="color: #c0392b;"><?= priority ?></span></p>
+    <p style="margin: 5px 0;"><strong>Description:</strong> <?= desc ?></p>
+  </div>
+  
+  <?!= attachmentSection ?>
+
+  <p style="text-align: center; margin-top: 30px;">
+    <a href="<?= approveUrl ?>" style="background-color: #2c3e50; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-right: 10px;">APPROVE</a>
+    <a href="<?= rejectUrl ?>" style="background-color: #c0392b; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold;">REJECT</a>
+  </p>
+  
+  <p style="font-size: 12px; color: #999; margin-top: 30px; text-align: center;">
+    Clicking a button will open a confirmation page and notify the employee.
+  </p>
+</div>
