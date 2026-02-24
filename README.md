@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.png" alt="Smart Request Approval System Banner" />
+  <img src="assets/banner.png" alt="Smart Request Approval System Banner" width="40%" height=320/>
 </p>
 
 # Smart Request Approval System
